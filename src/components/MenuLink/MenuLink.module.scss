@@ -1,0 +1,11 @@
+@import "styles/vars";
+
+.link {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: $color-font-primary;
+}
+
+.active {
+  text-decoration: underline;
+}
