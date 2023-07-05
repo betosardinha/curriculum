@@ -1,0 +1,11 @@
+@import "styles/vars";
+
+.footer {
+  background-color: $color-primary;
+  color: $white;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+}
