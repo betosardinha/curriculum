@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Circle from 'assets/circle.png';
-import MyPicture from 'assets/my-picture.png';
+import Circle from 'assets/images/circle.png';
+import MyPicture from 'assets/images/my-picture.png';
 
 import styles from './Banner.module.scss';
 
