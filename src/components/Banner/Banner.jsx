@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Circle from 'assets/images/circle.png';
-import MyPicture from 'assets/images/my-picture.png';
+import profile from 'assets/images/profile.png';
 
 import styles from './Banner.module.scss';
 
@@ -18,7 +18,7 @@ function Banner() {
 
       <div className={styles.images}>
         <img className={styles.circle} src={Circle} alt="" aria-hidden />
-        <img className={styles.picture} src={MyPicture} alt="My profile picture" aria-hidden />
+        <img className={styles.picture} src={profile} alt="My profile picture" aria-hidden />
       </div>
     </div>
   );
