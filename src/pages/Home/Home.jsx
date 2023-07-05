@@ -1,10 +1,13 @@
 import React from 'react';
+import Banner from 'components/Banner';
 
 // import styles from './Home.module.scss';
 
 function Home() {
   return (
-    <div>Home</div>
+    <main>
+      <Banner />
+    </main>
   );
 }
 
