@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Post.module.scss';
+import styles from './PostCard.module.scss';
 
-function Post({ post }) {
+function PostCard({ post }) {
   return (
     <div className={styles.post}>
       <img
@@ -17,11 +17,11 @@ function Post({ post }) {
   );
 }
 
-Post.propTypes = {
+PostCard.propTypes = {
   post: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default Post;
+export default PostCard;

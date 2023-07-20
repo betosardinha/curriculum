@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Post from 'components/Post';
+import PostCard from 'components/PostCard';
 
 import posts from 'data/posts.json';
 
@@ -12,7 +12,7 @@ function Home() {
       <ul className={styles.posts}>
         {posts.map((post) => (
           <li key={post.id}>
-            <Post post={post} />
+            <PostCard post={post} />
           </li>
         ))}
       </ul>
