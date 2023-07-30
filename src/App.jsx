@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from 'pages/Home';
 import About from 'pages/About';
+import NotFound from 'pages/NotFound';
 import Menu from 'components/Menu';
 import Footer from 'components/Footer';
 import DefaultPage from 'components/DefaultPage';
@@ -19,7 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="posts/:id" element={<Post />} />
         </Route>
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

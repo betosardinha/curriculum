@@ -12,6 +12,16 @@ function Post() {
   const params = useParams();
   const currentPost = posts.find((post) => post.id === Number(params.id));
 
+  if (!currentPost) {
+    return (
+      <PostTemplate>
+        <div className={styles.post}>
+          <h1>Post not found</h1>
+        </div>
+      </PostTemplate>
+    );
+  }
+
   return (
     <PostTemplate
       cover={`/assets/images/${currentPost.id}/cover.png`}

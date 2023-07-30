@@ -1,0 +1,124 @@
+@import "styles/vars";
+
+.container {
+  position: relative;
+  text-align: center;
+  background-color: $color-primary;
+  color: $white;
+  padding: 0 1.5rem 6.5rem;
+}
+
+.text404 {
+  display: block;
+  color: $color-secondary;
+  font-family: $font-secondary;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: $font-secondary;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.buttoncontainer {
+  text-align: start;
+  margin-top: 3.5rem;
+  margin-left: 30vw;
+}
+
+.backbutton {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  background-color: $color-primary;
+  color: $white;
+  border: 3px solid $color-secondary;
+  cursor: pointer;
+  transition: 0.2s
+}
+
+.backbutton:hover {
+  background-color: $color-secondary;
+}
+
+.image404 {
+  position: absolute;
+  height: 25vw;
+  bottom: calc(-25vw * 0.65);
+  border: 5px solid $color-primary;
+  border-radius: 100%;
+}
+
+.space {
+  height: 40vh;
+}
+
+@media (max-width: 1100px) {
+  .text404 {
+      margin-bottom: 2.25rem;
+  }
+
+  .buttoncontainer {
+      margin-top: 2.75rem;
+      margin-left: 15vw;
+  }
+
+  .image404 {
+      height: 50vw;
+      bottom: calc(-50vw * 0.7);
+      left: 40vw;
+  }
+
+  .space {
+      height: 53vw;
+  }
+}
+
+@media (max-width: 744px) {
+  .container {
+      padding: 3rem 1rem 17rem;
+  }
+
+  .text404 {
+      font-size: 4rem;
+  }
+
+  .title {
+      font-size: 2.25rem;
+      line-height: 3rem;
+  }
+
+  .paragraph {
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+  }
+
+  .buttoncontainer {
+      margin: 2.5rem 0 0;
+      text-align: center;
+  }
+
+  .image404 {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      height: 94vw;
+      bottom: calc(-94vw * 0.35);
+      max-height: 375px;
+  }
+
+  .space {
+      height: calc(94vw * 0.5);
+  }
+}
