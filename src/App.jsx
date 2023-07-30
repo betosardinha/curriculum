@@ -8,10 +8,12 @@ import Menu from 'components/Menu';
 import Footer from 'components/Footer';
 import DefaultPage from 'components/DefaultPage';
 import Post from 'components/Post';
+import ScrollToTop from 'components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
 
       <Routes>
