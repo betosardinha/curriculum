@@ -1,10 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import Button from 'components/Button';
 
 import NotFoundImage from 'assets/images/not-found.jpg';
 
 import styles from './NotFound.module.scss';
 
 function NotFound() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.container}>
@@ -17,8 +22,15 @@ function NotFound() {
           Aguarde alguns instantes e recarregue a página, ou volte para a página inicial.
         </p>
 
-        <div className={styles.buttoncontainer}>
-          <button type="button" className={styles.backbutton}>Voltar</button>
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+        <div
+          className={styles.buttoncontainer}
+          onClick={() => navigate('/')}
+          onKeyDown={() => navigate('/')}
+        >
+          <Button>
+            Voltar
+          </Button>
         </div>
 
         <img

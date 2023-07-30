@@ -25,23 +25,6 @@
   margin: 1.5rem 0 1.75rem;
 }
 
-.readbutton {
-  display: inline-block;
-  border-radius: 24px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-  background-color: $color-secondary;
-  color: $white;
-  border: 3px solid $color-secondary;
-  cursor: pointer;
-  transition: 0.2s
-}
-
-.readbutton:hover {
-  border: 3px solid $color-primary;
-}
-
 @media (width <= 1100px) {
   .postcard {
       width: 336px;

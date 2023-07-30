@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import Button from 'components/Button';
+
 import styles from './PostCard.module.scss';
 
 function PostCard({ post }) {
@@ -14,7 +16,7 @@ function PostCard({ post }) {
           alt={`Cover of post ${post.id}`}
         />
         <h2 className={styles.title}>{post.title}</h2>
-        <button className={styles.readbutton} type="button">Ler</button>
+        <Button>Ler</Button>
       </div>
     </Link>
   );
