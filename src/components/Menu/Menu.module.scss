@@ -1,15 +1,46 @@
 @import "styles/vars";
 
 .nav {
-  height: 112px;
+  height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 3rem;
+  margin: 0 5rem;
 }
 
-@media (width <= 744px) {
+.logotype {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: $color-font-primary;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: $color-primary;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+}
+
+.menulinks {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-left: auto;
+}
+
+@media (width <= 850px) {
   .nav {
-      height: 72px;
+      background-color: red;
+  }
+
+  .text {
+    font-size: 0;
   }
 }

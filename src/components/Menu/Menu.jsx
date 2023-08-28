@@ -8,13 +8,29 @@ function Menu() {
   return (
     <header>
       <nav className={styles.nav}>
-        <MenuLink to="/">
-          Início
-        </MenuLink>
+        <div className={styles.logotype}>
+          <div className={styles.logo}>S</div>
+          <span className={styles.text}><b>Alberto</b></span>
+          <span className={styles.text}>Sardinha</span>
+        </div>
 
-        <MenuLink to="/about">
-          Sobre
-        </MenuLink>
+        <div className={styles.menulinks}>
+          <MenuLink to="/">
+            Sobre Mim
+          </MenuLink>
+
+          <MenuLink to="/about">
+            Currículo
+          </MenuLink>
+
+          <MenuLink to="/about">
+            Portifólio
+          </MenuLink>
+
+          <MenuLink to="/about">
+            Contato
+          </MenuLink>
+        </div>
       </nav>
     </header>
   );
